@@ -14,30 +14,31 @@
                 </a>
             </div>
 
-    <form action="" method="post" class="login">
+    <form action="" method="post" class="login" id="login-form">
         <div class="contenedor-login">
             <h1>Que bueno verte!</h1>
 
             <!-- Email -->
             <div class="input-info">
-                <img src="../assets/imagenes/icons/circulo-de-usuario.png" alt="Usuario">
-                <input type="email" placeholder=" Email Ej.: ejemplo@ejemplo.com">
+                <input type="email" placeholder=" Email: ejemplo@ejemplo.com" id="email">
+                <small></small>
             </div>
             <!-- Email -->
 
             <!-- Contraseña -->
             <div class="input-info">
-                <img src="../assets/imagenes/icons/candado.png" alt="contraseña">
-                <input type="password" placeholder="Contraseña">
+                <input type="password" placeholder="Contraseña" id="password">
+                <small></small>
             </div>
             <!-- Contraseña -->
 
             <div>
-                <button class="button" role="button"><a href="index.html">INGRESAR</a></button>
+                <button class="button" role="button">INGRESAR</button>
             </div>
 
             <a href="register.html"><p>¿No tienes una cuenta? Regístrese</p></a>
         </div>
     </form>
+    <script src="../assets/login.js"></script>
 </body>
 </html>

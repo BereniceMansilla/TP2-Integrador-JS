@@ -1,9 +1,9 @@
 const productsContainer = document.querySelector(".productos-container");
 const productsContainer2 = document.querySelector("#product-maquillaje");
+const categoriesContainer = document.querySelector(".categories");
+const categoriesList = document.querySelectorAll(".category")
 
-
-
-
+// Productos Sección PERFUMES
 const CreateProductTemplate = (product) => {
     const { id, name, precio, category, img, descriptionProduct, cuotas} = product
     return `
@@ -34,14 +34,14 @@ const CreateProductTemplate = (product) => {
     </div>`;
 };
 
-
-
 const renderProducts = (productsList) => {
     productsContainer.innerHTML += productsList
     .map(CreateProductTemplate)
     .join("");
 };
 
+
+// Productos Sección MAQUILLAJE
 const CreateProductTemplate2 = (product) => {
     const { id, name, precio, img, descriptionProduct, cuotas } =
     product;
@@ -79,9 +79,15 @@ const renderProducts2 = (productsList) => {
     .join("");
 };
 
+
+
 const init = () => {
     renderProducts(productsData);
     renderProducts2(productsData2);
+    categoriesContainer.addEventListener("click", applyFilter);
 };
 init();
+
+// FUNCIONES AUXILIARES
+
 
