@@ -1,0 +1,12 @@
+html {
+    scroll-behavior: smooth;
+    scroll-padding-top: 144px;
+}
+
+/* .overlay {
+    position: absolute;
+    height: 100vh;
+    width: 100%;
+    z-index: 1;
+
+} */

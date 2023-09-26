@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Parfümhaus</title>
+    <link rel="stylesheet" href="./assets/style.css">
+    <link rel="stylesheet" href="./assets/background.css">
+    <link rel="stylesheet" href="./assets/animaciones.css">
+    <link rel="stylesheet" href="./assets/mediaqueries.css">
+</head>
+<body>
+    <header>
+        <div class="box">
+            <div class="user">
+                <a href="./pages/login.html" target="_blank">
+                <img src="./assets/imagenes/icons/usuario.png" alt="usuario" class="icon-user">
+                </a>
+            </div>
+            <div class="img-logo">
+                <img src="./assets/imagenes/logo/logo.png" alt="Logo Parfümhaus" class="logo"/>
+            </div>
+            
+            <div class="img-cart">
+
+                <label for="cart-toggle" class="cart-label">
+                    <img src="./assets/imagenes/icons/bag-cart.png" alt="Cart" class="cart-icon"/>
+                </label>
+                <input type="checkbox" id="cart-toggle">
+
+                <div class="carrito">
+                    <h2>CARRITO</h2>
+                    <!-- producto de carrito 1 -->
+                    <div class="carrito-item">
+                        <img src="./assets/imagenes/productos/eyeliner lancome.jpg" alt="item">
+                        <div class="item-info">
+                            <h3 class="item-title">Lancome</h3>
+                            <p class="item-bid">Liner Idole Waterproof</p>
+                            <span class="item-price">$ 14.590</span>
+                        </div>
+
+                        <div class="item-cantidad">
+                            <span class="quantity-handler down">-</span>
+                            <span class="item-quantity">1</span>
+                            <span class="quantity-handler up">+</span>
+                        </div>
+                    </div>
+                    <!-- producto de carrito 2 -->
+                    <div class="carrito-item">
+                        <img src="./assets/imagenes/productos/la vie est belle.jpg" alt="item">
+                        <div class="item-info">
+                            <h3 class="item-title">Lancome</h3>
+                            <p class="item-bid">La Vie Est Belle EDP</p>
+                            <span class="item-price">$ 58.000</span>
+                        </div>
+
+                        <div class="item-cantidad">
+                            <span class="quantity-handler down">-</span>
+                            <span class="item-quantity">1</span>
+                            <span class="quantity-handler up">+</span>
+                        </div>
+                    </div>
+                    <!-- producto de carrito 3 -->
+                    <div class="carrito-item">
+                        <img src="./assets/imagenes/productos/powder fundation.jpg" alt="item">
+                        <div class="item-info">
+                            <h3 class="item-title">Mac</h3>
+                            <p class="item-bid">Studio Fix Powder Plus Fundation</p>
+                            <span class="item-price">$ 16.488</span>
+                        </div>
+
+                        <div class="item-cantidad">
+                            <span class="quantity-handler down">-</span>
+                            <span class="item-quantity">1</span>
+                            <span class="quantity-handler up">+</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <section id="list">
+        <nav id="navbar">
+
+            <label for="menu-toggle" class="menu-label">
+                <img src="./assets/imagenes/icons/menu-puntos.png" alt="menu.icon">
+            </label>
+
+            <input type="checkbox" id="menu-toggle">
+
+                <ul class="navbar-list">
+                    <li> <a href="#hero">Inicio</a></li>
+                    <li> <a href="#fragancias">Fragancias</a></li>
+                    <li> <a href="#maquillaje">Maquillaje</a></li>
+                    <li> <a href="#beneficios">Beneficios</a></li>
+                    <li> <a href="#contacto">Contacto</a></li>
+                </ul>
+            <div class="overlay"></div>
+        </nav>
+    </section>
+    </header>
+
+    
+
+    <main>
+        <section id="hero">
+            <div class="hero-img-slider">
+                <ul>
+                    <li><img src="./assets/imagenes/slider/calvin klein.jpg" alt="calvin klein"/></li>
+                    <li><img src="./assets/imagenes/slider/armani.jpg" alt="armani"/></li>
+                    <li><img src="./assets/imagenes/slider/cher.jpg" alt="cher"/></li>
+                    <li><img src="./assets/imagenes/slider/lancome.jpg" alt="lancome"/></li>
+                    <li><img src="./assets/imagenes/slider/lavieestbelle.jpg" alt="lancome lveb"/></li>
+                    <li><img src="./assets/imagenes/slider/pacco rabanne.jpg" alt="paco rabanne"/></li>
+                </ul>
+            </div>
+
+            <div class="info-card-container">
+                <div class="info-card">
+                    <h1>REGALOS</h1>
+                    <img src="./assets/imagenes/icons/regalo.png" alt="Regalos por Compra">
+                    <p>exclusivos por compra</p>
+                </div>
+                <div class="info-card">
+                    <h1>3 & 6</h1>
+                    <img src="./assets/imagenes/icons/credit-card.png" alt="Tarjetas de Crédito">
+                    <p>cuotas sin intereses</p>
+                </div>
+                <div class="info-card">
+                    <h1>ENVÍOS GRATIS</h1>
+                    <img src="./assets/imagenes/icons/camion-envios.png" alt="Envíos">
+                    <p>en compras superiores a $15.000</p>
+                </div>
+                <div class="info-card">
+                    <h1>GIF CARDS</h1>
+                    <img src="./assets/imagenes/icons/tarjeta-de-regalo.png" alt="Gif Card">
+                    <p>desde $1.000</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="fragancias">
+            <h1> FRAGANCIAS </h1>
+            <div class="categories">
+                <button class="category">Todas</button>
+                <button class="category">Femeninas</button>
+                <button class="category">Masculinas</button>
+                <button class="category">Unisex</button>
+            </div>
+
+
+            <!-- PRODUCTOS -->
+            <div class="productos-container"></div>
+        </section>
+
+        <section id="maquillaje">
+                <h1>MAQUILLAJE</h1>
+            <div class="productos-container" id="product-maquillaje">
+                
+            </div>
+        </section>
+
+        <section id="beneficios">
+            <h1>BENEFICIOS</h1>
+            <p>Trabajamos con las mejores marcas del mercado.
+            Encontrá maquillaje y fragancias exclusivas, regalos por compra, cofres y sets. <br />
+            Ofrecemos hasta 6 cuotas sin interés en marcas seleccionadas <span>(Visa, Master, Amex), 10% de descuento con tarjetas de débito o transferencia bancaria. <br />
+            Tenemos envíos a todo el país 🚚</span>
+            </p>
+
+            <h2>MARCAS DESTACADAS</h2>
+            <div class="beneficios-img">
+                <img src="./assets/imagenes/marcas/YSL.png" alt="ysl">
+                <img src="./assets/imagenes/marcas/chanel.png" alt="chanel">
+                <img src="./assets/imagenes/marcas/dior.png" alt="dior">
+                <img src="./assets/imagenes/marcas/lancome.png" alt="lancome">
+                <img src="./assets/imagenes/marcas/mac.png" alt="mac">
+                <img src="./assets/imagenes/marcas/paco rabanne.png" alt="paco rabanne">
+            </div>
+
+        </section>
+
+        <section id="contacto">
+            <div class="contact-us">
+                <h1>Contacto</h1>
+                <div class="contact-img-info">
+                    <img src="./assets/imagenes/icons/ubicacion.png" alt="ubicación">
+                    <span>General San Martin, Buenos Aires, Argentina</span>
+                </div>
+
+                <div class="contact-img-info">
+                    <img src="./assets/imagenes/icons/mail.png" alt="email">
+                    <span>info@parfumhaus.com.ar</span>
+                </div>
+
+                <div class="contact-img-info">
+                    <img src="./assets/imagenes/icons/whatsapp.png" alt="telefono">
+                    <span>+54 11 2455 5555</span>
+                </div>
+
+                <div class="contact-img-redes">
+                    <img src="./assets/imagenes/icons/instagram.png" alt="instagram">
+                    <img src="./assets/imagenes/icons/facebook.png" alt="facebook">
+                    <img src="./assets/imagenes/icons/youtube.png" alt="youtube">
+                    <img src="./assets/imagenes/icons/tik-tok.png" alt="tiktok">
+                </div>
+            </div>
+
+            <div class="contact-map">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d6569.937041352317!2d-58.539911446954164!3d-34.57966306827756!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcb776b321c597%3A0x7bd8d5aa05d35e87!2sPlaza%20San%20Mart%C3%ADn!5e0!3m2!1ses!2sar!4v1684461858512!5m2!1ses!2sar" width="400" height="350" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-information">
+            <div>
+                <img src="./assets/imagenes/logo/logo.png" alt="parfümhaus" class="logo-footer">
+            </div>
+
+            <div class="contact-img-redes-footer">
+                    <img src="./assets/imagenes/icons/instagram.png" alt="instagram">
+                    <img src="./assets/imagenes/icons/facebook.png" alt="facebook">
+                    <img src="./assets/imagenes/icons/youtube.png" alt="youtube">
+                    <img src="./assets/imagenes/icons/tik-tok.png" alt="tiktok">
+                </div>
+        </div>
+    </footer>
+    <script src="./assets/data.js"></script>
+    <script src="./assets/index.js"></script>
+
+</body>
+</html>

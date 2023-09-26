@@ -1,0 +1,166 @@
+/* fonts */
+@import url("https://fonts.googleapis.com/css2?family=Montserrat+Alternates:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,100&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Saira:wght@100;200;300;400;500;600;700;800;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Satisfy&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Amatic+SC:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Quicksand", sans-serif;
+    text-decoration: none;
+    list-style-type: none;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    max-width: 100%;
+    height: 100vh;
+}
+
+.icon-user {
+    height: 200px;
+    width: 200px;
+}
+
+.contenedor-login {
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 10px 36px 0px, rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    padding: 50px;
+}
+
+.contenedor-login h1 {
+    text-align: center;
+    font-size: 45px;
+    font-weight: 500;
+}
+
+.input-info {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    height: 50px;
+    width: 100%;
+}
+
+.input-info input {
+    height: 40px;
+    width: 300px;
+    padding-left: 10px;
+    border-color: #ddccf1;
+}
+
+.input-info img {
+    height: 30px;
+    width: 30px;
+}
+
+.contenedor-login p {
+    text-decoration:underline;
+    color: black;
+}
+
+.button {
+    appearance: none;
+    background-color: #ddccf1;
+    border: 2px solid #ddccf1;
+    border-radius: 15px;
+    box-sizing: border-box;
+    color: #3B3B3B;
+    cursor: pointer;
+    display: inline-block;
+    font-family: Roobert,-apple-system,BlinkMacSystemFont,"Segoe UI",Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
+    font-size: 16px;
+    font-weight: 600;
+    line-height: normal;
+    margin: 0;
+    min-height: 60px;
+    min-width: 0;
+    outline: none;
+    padding: 16px 24px;
+    text-align: center;
+    text-decoration: none;
+    transition: all 300ms cubic-bezier(.23, 1, 0.32, 1);
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+    width: 100%;
+    will-change: transform;
+}
+
+.button:disabled {
+    pointer-events: none;
+}
+
+.button:hover {
+    color: #fff;
+    background-color: #1A1A1A;
+    box-shadow: rgba(0, 0, 0, 0.25) 0 8px 15px;
+    transform: translateY(-2px);
+}
+
+.button:active {
+    box-shadow: none;
+    transform: translateY(0);
+}
+
+.button a {
+    color: white;
+}
+
+/* MEDIAQUERIES */
+
+@media (max-width: 576px) {
+
+    .contenedor-login {
+    height: 300px;
+    width: 350px;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 10px 36px 0px, rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+    padding: 20px;
+    }
+
+    .contenedor-login h1 {
+        font-size: 26px;
+    }
+
+    .input-info {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    height: 50px;
+    width: 100%;
+    }
+
+    .input-info input {
+    height: 40px;
+    width: 250px;
+    padding-left: 5px;
+    }
+
+    .input-info img {
+    height: 24px;
+    width: 24px;
+    }
+
+    .contenedor-login p {
+    font-size: 12px;
+    }
+}
