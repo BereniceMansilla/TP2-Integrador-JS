@@ -154,12 +154,14 @@ const validPasswordInput = (input) => {
 
 // f Validación & Almacenamiento
 const validateForm = (e) => {
-    e.parentDefault()  // evitar comportamiento por default
-    let nameValid = validEmailInput(nameInput);
-    let apellidoValid = validPasswordInput(apellidoInput);
+    e.preventDefault();  // evitar comportamiento por default
+    
+    let nameValid = validTextInput(nameInput);
+    let apellidoValid = validTextInput(apellidoInput);
     let emailValid = validEmailInput(emailInput);
     let telValid = validTelInput(telInput);
     let passValid = validPasswordInput(passInput);
+
     //guardo todas las funciones sueltas de arriba en una variable 
     let formValid =
         nameValid &&
@@ -178,8 +180,8 @@ const validateForm = (e) => {
         });
         saveToLocalStorage(users);
         alert("Tu cuenta fue creada con éxito");
-        window.location.href="login.html";
-    };
+        window.location.href="login.html";    
+    }
 };
 
 //--------------------------------------------------------//
@@ -188,7 +190,7 @@ const validateForm = (e) => {
 // f Inicializadora
 
 const init = () => {
-    registerForm.addEventListener("submit", validateForm);
+    registerForm.addEventListener("submit", validateForm); //submit del button type="submit"
     nameInput.addEventListener("input", () => validTextInput(nameInput));
     apellidoInput.addEventListener("input", () => validTextInput(apellidoInput));
     emailInput.addEventListener("input", () => validEmailInput(emailInput));

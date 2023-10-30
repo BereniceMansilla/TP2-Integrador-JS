@@ -63,10 +63,6 @@ const validEmailInput = (input) => {
         showError(input, `El email no es válido`);
         return;
     };
-    if (existingEmail(input)) {
-        showError(input, `El email ya está registrado`);
-        return;
-    };
     showSuccess(input);
     valid = true;
     return valid;

@@ -190,6 +190,7 @@ header {
     font-weight: 500;
 }
 
+
 .productos-container {
     width: 70%;
     display: flex;
@@ -263,7 +264,6 @@ header {
     font-weight: 700;
 } */
 
-/* CSS */
 .button-81 {
     background-color: #fff;
     border: 0 solid #e2e8f0;
@@ -290,6 +290,24 @@ header {
     color: #fff;
 }
 
+/* style category state */
+.active {
+    background: #ddccf1;
+    border-color: #ddccf1;
+    color: rgb(0, 0, 0);
+}
+
+
+.loadMore {
+    width: 20%;
+    border-color: black;
+    padding: 10px 10px;
+    color: black;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 18px;
+    font-weight: 500;
+}
 
 #maquillaje {
     display: flex;
@@ -424,11 +442,12 @@ footer {
 }
 
 .carrito {
-    position: absolute; 
+    position: absolute;
+    justify-content: space-between; 
     top: 65px;
     height: 100vh;
     right: 0;
-    padding: 30px 20px;
+    padding: 20px 20px;
     display: flex;
     flex-direction: column;
     gap: 30px;
@@ -508,4 +527,146 @@ footer {
 
 .item-quantity {
     margin: 5px;
+}
+
+.divider {
+    margin-top: 20px;
+    border: 0.5px solid #ddccf1 ;
+    width: 100%;
+}
+
+.cart-total {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+.cart-total p {
+    font-size: 20px;
+    font-weight: 500;
+
+}
+
+/* Botón Comprar*/
+.btn-buy {
+    position: relative;
+    margin: auto;
+    padding: 14px 22px;
+    transition: all 0.2s ease;
+}
+.btn-buy:before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: block;
+    border-radius: 28px;
+    background: rgba(219, 193, 235, 0.911);
+    width: 50px;
+    height: 50px;
+    transition: all 0.3s ease;
+}
+.btn-buy span {
+    color: black;
+    margin-bottom: 25px;
+    position: relative;
+    font-size: 12px;
+    line-height: 14px;
+    font-weight: 500;
+    letter-spacing: 0.25em;
+    text-transform: uppercase;
+    vertical-align: middle;
+}
+.btn-buy img {
+    height: 18px;
+    margin-left: 5px;
+    position: relative;
+    top: 0;
+    fill: none;
+    transform: translateX(-5px);
+    transition: all 0.3s ease;
+}
+.btn-buy:hover:before {
+    width: 100%;
+    background: #bc7ce0;
+}
+.btn-buy:hover img {
+    transform: translateX(0);
+}
+.btn-buy:active {
+    transform: scale(0.96);
+}
+
+/* Botón Vaciar Carrito */
+.delete {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: rgb(20, 20, 20);
+    border: none;
+    font-weight: 600;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.164);
+    cursor: pointer;
+    transition-duration: .3s;
+    overflow: hidden;
+    position: relative;
+}
+
+.svgIcon {
+    width: 12px;
+    transition-duration: .3s;
+}
+
+.svgIcon path {
+    fill: white;
+}
+
+.delete:hover {
+    width: 140px;
+    border-radius: 50px;
+    transition-duration: .3s;
+    background-color: rgb(255, 69, 69);
+    align-items: center;
+}
+
+.delete:hover .svgIcon {
+    width: 50px;
+    transition-duration: .3s;
+    transform: translateY(60%);
+}
+
+.delete::before {
+    position: absolute;
+    top: -20px;
+    content: "Delete";
+    color: white;
+    transition-duration: .3s;
+    font-size: 2px;
+}
+
+.delete:hover::before {
+    font-size: 13px;
+    opacity: 1;
+    transform: translateY(30px);
+    transition-duration: .3s;
+}
+
+/*Toggle del carro*/
+.open-cart {
+    transform: translate(0%);
+    transition: all 1s cubic-bezier(0.92, 0.01, 0.35, 0.99);
+}
+
+.empty-msg {
+    color: var(--text-gray);
+    font-size: 14px;
+}
+
+.hidden {
+    display: none;
 }
