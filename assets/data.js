@@ -102,8 +102,8 @@ const divideProductsSize = (size) => {
 
 // f Estado
 const appState = {
-  products: divideProductsSize(2),
+  products: divideProductsSize(3),
   currentProductsIndex: 0,
-  productsLimit: divideProductsSize(2).length,
+  productsLimit: divideProductsSize(3).length,
   activeFilter: null
 };
