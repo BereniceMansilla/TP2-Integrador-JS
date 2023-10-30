@@ -40,7 +40,7 @@
     align-items: center;
     justify-content: center;
     gap: 80px;
-    padding: 60px 0;
+    padding: 60px;
 }
 
     .producto {
@@ -207,7 +207,7 @@
     align-items: center;
     justify-content: center;
     gap: 40px;
-    padding: 60px 0;
+    padding: 60px 0px 20px 0px;
     }
 
     .producto {
@@ -235,6 +235,35 @@
     justify-content: center;
     align-items: center;
     gap: 10px;
+    }
+
+    .button-81 {
+    background-color: #ddccf1;
+    border: 0 solid #e2e8f0;
+    box-sizing: border-box;
+    color: white;
+    cursor: pointer;
+    display: inline-block;
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 1;
+    padding: 5px;
+    text-align: center;
+    text-decoration: none #0d172a solid;
+    text-decoration-thickness: auto;
+    transition: all .1s cubic-bezier(.4, 0, .2, 1);
+    box-shadow: 0px 1px 2px rgba(166, 175, 195, 0.25);
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+}
+
+    #product-maquillaje {
+        gap: 20px
+    }
+
+    #beneficios {
+        padding: 100px 0px;
     }
 
     .bot-text {
@@ -279,25 +308,114 @@
         width: 40%;
     }
 
+/* --- BOTON COMPRAR --- */
+
+    .btn-buy {
+    padding: 10px;
+    transition: all 0.2s ease;
+    }
+    .btn-buy:before {
+    width: 40px;
+    height: 40px;
+    transition: all 0.3s ease;
+    }
+    .btn-buy span {
+    margin-bottom: 25px;
+    font-size: 8px;
+    line-height: 14px;
+    font-weight: 700;
+    letter-spacing: 0.15em;
+    }
+    .btn-buy img {
+    height: 12px;
+    margin-left: 5px;
+    }
+
+/* --- BOTON DELETE --- */
+
+    .delete {
+    width: 40px;
+    height: 40px;
+    }
+
+    .svgIcon {
+    width: 12px;
+    transition-duration: .3s;
+    }
+
+    .delete:hover {
+    width: 120px;
+    border-radius: 50px;
+    transition-duration: .3s;
+    background-color: rgb(255, 69, 69);
+    align-items: center;
+    }
+
+    .delete:hover .svgIcon {
+    width: 50px;
+    transition-duration: .3s;
+    transform: translateY(60%);
+    }
+
+    .delete::before {
+    position: absolute;
+    top: -25px;
+    content: "Vaciar Carrito";
+    color: white;
+    transition-duration: .3s;
+    font-size: 2px;
+    }
+
+    .delete:hover::before {
+    font-size: 10px;
+    opacity: 1;
+    transform: translateY(30px);
+    transition-duration: .3s;
+    }
+
+    .cart-total span {
+    font-weight: 700;
+    }
+
+    .cart-total p {
+    font-size: 14px;
+    font-weight: 500;
+    }
 }
 
 @media (max-width: 576px){
 
+    .box {
+        padding: 0px 20px;
+    }
+
+    .loadMore {
+        width: 70px;
+        font-size: 12px;
+    }
+
+    .icon-user {
+        height: 25px;
+        width: 25px;
+    }
+
     .hero-img-slider {
     width: 100%;
-    height: 250px;
+    height: 200px;
     overflow-y: hidden;
     overflow-x: hidden;
+    margin-top: 10px;
     }
 
     .hero-img-slider img {
     width: 100%;
-    height: 250px;
+    height: 200px;
     }
 
     .info-card-container {
         width: 100%;
         gap: 15px;
+        padding: 20px 0px;
     }
 
 
@@ -346,8 +464,15 @@
     font-weight: 400;
     }
 
+    
+
     .carrito {
         width: 50%;
+    }
+
+    .cart-icon {
+        height: 20px;
+        width: 20px;
     }
 
     .beneficios-img {
@@ -364,7 +489,7 @@
     }
 
     #contacto {
-    padding: 80px 20px;
+    padding: 20px 20px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -387,24 +512,24 @@
     }
 
 
-.contact-img-info img {
+    .contact-img-info img {
     width: 18px;
     height: 18px;
     margin-right: 8px;
     }
 
-.contact-img-info span { 
+    .contact-img-info span { 
     align-items: center;
     font-size: 14px;
     font-family: "Quicksand", sans-serif;
     }
 
-.contact-img-redes img {
+    .contact-img-redes img {
     height: 16px;
     margin: 20px;
     }
 
-.contact-img-redes {
+    .contact-img-redes {
     margin-left: 20px;
     }
 
