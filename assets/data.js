@@ -2,7 +2,7 @@ const productsData = [
   {
     id: 1,
     name: "Lancome",
-    precio: "$ 58.900",
+    precio: " 58.900",
     category: "femeninas",
     img: "./assets/imagenes/productos/la nuit tresor.jpg",
     descriptionProduct: "La Nuit Tresor Fleur de Nuit EDP",
@@ -11,7 +11,7 @@ const productsData = [
   {
     id: 2,
     name: "Armani",
-    precio: "$ 59.900",
+    precio: " 59.900",
     category: "femeninas",
     img: "./assets/imagenes/productos/armani.jpg",
     descriptionProduct: "My Way EDP",
@@ -20,7 +20,7 @@ const productsData = [
   {
     id: 3,
     name: "Calvin Klein",
-    precio: "$ 50.300",
+    precio: " 50.300",
     category: "unisex",
     img: "./assets/imagenes/productos/calvin klein.jpg",
     descriptionProduct: "CK Everyone EDP",
@@ -29,7 +29,7 @@ const productsData = [
   {
     id: 4,
     name: "Paco Rabanne",
-    precio: "$ 54.650",
+    precio: " 54.650",
     category: "masculinas",
     img: "./assets/imagenes/productos/paco rabanne.jpg",
     descriptionProduct: "Phantom EDT 100 ml + Elixir Bolso",
@@ -38,7 +38,7 @@ const productsData = [
   {
     id: 5,
     name: "Cher",
-    precio: "$ 12.990",
+    precio: " 12.990",
     category: "femeninas",
     img: "./assets/imagenes/productos/cher.jpg",
     descriptionProduct: "Iris EDP",
@@ -47,7 +47,7 @@ const productsData = [
   {
     id: 6,
     name: "Lancome",
-    precio: "$ 58.000",
+    precio: " 58.000",
     category: "femeninas",
     img: "./assets/imagenes/productos/la vie est belle.jpg",
     descriptionProduct: "La Vie Est Belle EDP",
@@ -56,7 +56,7 @@ const productsData = [
   {
     id: 7,
     name: "Dior",
-    precio: "$ 92.900",
+    precio: " 92.900",
     category: "masculinas",
     img: "./assets/imagenes/productos/christian dior sauvage.jpg",
     descriptionProduct: "Sauvage EDP",

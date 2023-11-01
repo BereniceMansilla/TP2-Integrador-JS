@@ -145,6 +145,20 @@
         display: flex;
     }
 
+    /* BOTON COMPRAR */
+    .btn-buy {
+    padding: 14px;
+    }
+
+    .btn-buy span {
+    font-size: 10px;
+    }
+
+    /* BOTON DELETE*/
+    .delete::before {
+    content: "Vaciar Carrito";
+    }
+    
     .navbar-list a {
         font-size: 18px;
         cursor: pointer;
@@ -507,30 +521,16 @@
     font-weight: 600;
     }
 
-    .contact-img-info {
-    padding: 15px;
-    }
-
-
-    .contact-img-info img {
-    width: 18px;
-    height: 18px;
-    margin-right: 8px;
-    }
-
-    .contact-img-info span { 
-    align-items: center;
-    font-size: 14px;
-    font-family: "Quicksand", sans-serif;
-    }
-
     .contact-img-redes img {
     height: 16px;
     margin: 20px;
     }
 
     .contact-img-redes {
-    margin-left: 20px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 20px;
     }
 
     .contact-map iframe {

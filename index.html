@@ -31,16 +31,15 @@
 
                 <div class="carrito">
                     <h2>CARRITO</h2>
-                    <!-- producto de carrito 1 -->
-                    <div class="carrito-item">
+                    <!-- producto de carrito -->
+                    <div class="carrito-container">
                         
                     </div>
-
 
                     <div class="cart-total">
                         <span class="divider"></span>
                         <div >
-                            <p>Total: <span class="total">18.3 ETH</span></p>
+                            <p>Total: <span class="total">$ 0</span></p>
                         </div>
                         <a href="#" class="btn-buy">
                             <span>Finalizar Compra</span>
@@ -127,6 +126,7 @@
 
             <!-- PRODUCTOS -->
             <div class="productos-container"></div>
+
             <button class="loadMore">Ver Más</button>
         </section>
 
@@ -158,22 +158,50 @@
         </section>
 
         <section id="contacto">
+
             <div class="contact-us">
+
                 <h1>Contacto</h1>
-                <div class="contact-img-info">
-                    <img src="./assets/imagenes/icons/ubicacion.png" alt="ubicación">
-                    <span>General San Martin, Buenos Aires, Argentina</span>
-                </div>
 
-                <div class="contact-img-info">
-                    <img src="./assets/imagenes/icons/mail.png" alt="email">
-                    <span>info@parfumhaus.com.ar</span>
-                </div>
+                <form class="login" id="login-form" novalidate> 
 
-                <div class="contact-img-info">
-                    <img src="./assets/imagenes/icons/whatsapp.png" alt="telefono">
-                    <span>+54 11 2455 5555</span>
-                </div>
+                    <div class="contenedor-login">
+
+                        <!-- Nombre -->
+                        <div class="input-info">
+                            <input type="text" placeholder=" Nombre" id="name">
+                            <small></small>
+                        </div>
+                        <!-- Nombre -->
+
+                        <!-- Apellido -->
+                        <div class="input-info">
+                            <input type="text" placeholder=" Apellido" id="apellido">
+                            <small></small>
+                        </div>
+                        <!-- Apellido -->
+
+                        <!-- Email -->
+                        <div class="input-info">
+                            <input type="email" placeholder=" Email: ejemplo@ejemplo.com" id="email">
+                            <small></small>
+                        </div>
+                        <!-- Email -->
+
+                        <!-- Telefono -->
+                        <div class="input-info"> 
+                            <input type="text" placeholder=" Telefono" id="telefono">
+                            <small></small>
+                        </div>
+                        <!-- Telefono -->
+
+                        <!-- Button -->
+                        <div>
+                            <button type="submit" class="button" >Enviar</button>
+                        </div>
+                        <!-- Button -->
+                    </div>
+                </form>
 
                 <div class="contact-img-redes">
                     <img src="./assets/imagenes/icons/instagram.png" alt="instagram">
@@ -205,6 +233,5 @@
     </footer>
     <script src="./assets/data.js"></script>
     <script src="./assets/index.js"></script>
-
 </body>
 </html>
